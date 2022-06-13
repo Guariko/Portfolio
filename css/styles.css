@@ -38,6 +38,26 @@ body {
     background: var(--main-color);
 }
 
+h1 {
+    color: #cad5f5;
+}
+
+h2 {
+    color: #cad5f5;
+    font-size: 3rem;
+}
+
+p {
+    color: var(--third-color);
+    line-height: 1.5;
+    max-width: 50ch;
+    font-size: 1.4rem;
+}
+
+mark {
+    color: var(--second-color);
+}
+
 /* FIXME: Setting up the project ends */
 
 /* TODO: Header starts */
@@ -89,7 +109,7 @@ body {
     left: 0;
     right: 0;
     height: 100vh;
-    background: rgba(76, 147, 151, 0.3);
+    background: rgba(24, 29, 31, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +145,7 @@ body {
     border-radius: 1rem;
     border: 0.1rem solid var(--second-color);
     cursor: pointer;
+    font-weight: 600;
 }
 
 .button:hover {
@@ -163,6 +184,48 @@ body {
 }
 
 /* FIXME: Aside bar ends */
+
+/* TODO: Main adjustments */
+
+.main {
+    margin-top: var(--header-height);
+    margin-left: var(--aside-bar-width);
+    padding: 3rem 1rem 0 1rem;
+}
+
+/* FIXME: Main adjustments end */
+
+.home h2 {
+    color: #808ba6;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.home .introduction {
+    margin-top: 2rem;
+}
+
+.home .button {
+    margin-top: 4rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.home__icons {
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.home__icons i {
+    font-size: 4rem;
+    color: var(--third-color);
+}
+
+/* FIXME: Home section ends /*
 
 /* TODO: Animations */
 
@@ -212,6 +275,66 @@ body {
     }
 
     /* FIXME: Header adjustments end */
+
+    /* TODO: Main adjustments */
+
+    .main {
+        padding: 3rem 2rem 0 6%;
+    }
+    
+    /* FIXME: Main adjustments end */
+}
+
+@media screen and (min-width:400px) {
+
+    /* TODO: Setting up the project adjustments */
+    
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    /* FIXME: Setting up the project adjustments end */
+
+    /* TODO: Home adjustments */
+    
+    .home h1 {
+        font-size: 3.5rem;
+        margin-top: 1rem;
+    }
+
+    /* FIXME: Home adjustments end */ 
+
+}
+
+@media screen and (min-width: 500px) {
+
+    /* TODO: Main adjustments */
+
+    .main {
+        padding: 5rem 4rem 0 8%;
+    }
+    
+    /* FIXME: Main adjustments end */
+    
+}
+
+@media screen and (min-width: 600px) {
+
+    /* TODO: Setting up the project adjustments */
+    
+    h2 {
+        font-size: 4rem;
+    }
+
+    /* FIXME: Setting up the project adjustments end */
+
+    /* TODO: Home adjustments */
+    
+    .home h1 {
+        font-size: 4rem;
+    }
+
+    /* FIXME: Home adjustments end */ 
     
 }
 
@@ -222,6 +345,14 @@ body {
     :root {
         --header-height: 7.5rem;
         --aside-bar-width: 6rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
     }
 
     /* FIXME: Setting up the project adjustments end */
@@ -318,5 +449,66 @@ body {
     }
 
     /* FIXME: Aside bar adjustments end */
+
+    /* TODO: Main adjustments */
+
+    .main {
+        padding: 10rem 2rem 0 10%;
+    }
     
+    /* FIXME: Main adjustments end */
+
+    /* TODO: Home adjustments */
+
+    .home .introduction {
+        margin-top: 4rem;
+    }
+    
+    .home h1 {
+        font-size: 4.5rem;
+        margin-top: 1rem;
+    }
+
+    /* FIXME: Home adjustments end */
+    
+}
+
+@media screen and (min-width:800px) {
+
+    /* TODO: Setting up the project adjustments */
+    
+    h2 {
+        font-size: 5rem;
+    }
+
+    /* FIXME: Setting up the project ajdustments end */
+
+    /* TODO: Home adjustments */
+
+    .home h1 {
+        font-size: 5rem;
+    }
+
+    /* FIXME: Home adjustments end */
+  
+}
+
+@media screen and (min-width:1000px) {
+
+    /* TODO: Setting up the project adjustments */
+    
+    h2 {
+        font-size: 6.5rem;
+    }
+
+    /* FIXME: Setting up the project ajdustments end */
+
+    /* TODO: Home adjustments */
+
+    .home h1 {
+        font-size: 6.5rem;
+    }
+
+    /* FIXME: Home adjustments end */
+  
 }
