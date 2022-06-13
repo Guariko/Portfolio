@@ -26,3 +26,18 @@ closeHeaderNavBar.addEventListener("click", e => {
 });
 
 // FIXME: Header ends //
+
+// TODO: Swiper starts //
+
+var swiper = new Swiper(".project__images", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop: true,
+  });
+
+// FIXME: Swiper ends //  

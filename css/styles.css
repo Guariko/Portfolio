@@ -232,18 +232,22 @@ mark {
 /* TODO: About me section starts */
 
 .about {
-    margin-top: 10rem;
-    margin-bottom: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .about__image {
     display: none;
 }
 
+.projects h2,
+.experience__content h2,
 .about h2 {
     font-size: 2rem;
 }
 
+.projects h2 mark
+.experience__content mark,
 .about h2 mark {
     font-size: 1.7rem;
 }
@@ -300,6 +304,129 @@ mark {
 }
 
 /* FIXME: About me section ends */
+
+/* TODO: Experience starts */
+
+.experience {
+    padding-top: 25rem;
+    padding-bottom: 25rem;
+}
+
+.experience p:first-of-type {
+    margin-top: 2rem;
+}
+
+.experience p:last-of-type {
+    text-indent: 1.2rem;
+}
+
+/* FIXME: Experience ends */
+
+/* TODO: Projects start */
+
+.projects {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.slides__desk__mobile > h3 {
+    font-size: 3rem;
+    color: #cad5f5;
+    text-align: center;
+}
+
+.project .hmobile {
+    margin-top: 4rem;
+}
+
+.project__images.desktop {
+    width: 30rem;
+    height: 30rem;
+    align-self: center;
+}
+
+.project__images {
+    width: 30rem;
+    height: 35rem;
+    align-self: center;
+}
+
+.wrapper {
+    overflow: visible;  
+}
+
+.project__slide {
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__images .project__slide img { 
+    width: 100%;
+    height: 25rem;
+    border-radius: 1rem;
+}
+
+.project__images .project__slide.mobile img { 
+    height: 28rem;
+    border-radius: 1rem;
+    width: 16rem ;
+}
+
+.projects p:first-of-type {
+    margin: 2rem 0 6rem 0;
+}
+
+.project__content {
+    margin: 3rem 0 12rem;
+}
+
+.project__content h4 {
+    color: var(--second-color);
+    font-size: 1.5rem;
+}
+
+.project__content h3 {
+    color: #cad5f5;
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+#projects .swiper-pagination {
+    bottom: 0;
+}
+
+#projects .swiper-pagination-bullet-active {
+    background: var(--second-color);
+}
+
+.project .button {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.project .button:last-of-type {
+    margin-left: 2rem;
+}
+
+.code__project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project__itself {
+    width: 15rem;
+}
+
+.project__code {
+    width: 15rem;
+}
+
+/* FIXME: Projects end */
 
 /* TODO: Animations */
 
@@ -380,6 +507,33 @@ mark {
 
 }
 
+@media screen and (min-width:450px) {
+
+    /* Project adjustments */
+
+    .project__images.desktop {
+        width: 35rem;
+        height: 33rem;
+    }
+
+    .project__images .project__slide img {        
+        height: 28rem;
+    }
+
+    .project__images {
+        height: 40rem;
+    }
+
+    .project__images .project__slide.mobile img { 
+        height: 33rem;
+        width: 20rem;
+    }
+
+    /* Project adjustments end */
+
+    
+}
+
 @media screen and (min-width: 500px) {
 
     /* TODO: Main adjustments */
@@ -389,6 +543,19 @@ mark {
     }
     
     /* FIXME: Main adjustments end */
+
+    /* Project adjustments */
+
+    .project__images.desktop {
+        width: 40rem;
+        height: 40rem;
+        
+    }
+    .project__images .project__slide img {        
+        height: 35rem;
+    }
+
+    /* Project adjustments end */
     
 }
 
@@ -409,6 +576,16 @@ mark {
     }
 
     /* FIXME: Home adjustments end */ 
+
+    /* FIXME: Main adjustments end */
+
+    /* Project adjustments */
+
+    .project__images.desktop {
+        width: 45rem;
+    }
+
+    /* Project adjustments end */
     
 }
 
@@ -597,6 +774,7 @@ mark {
     }
 
     /* FIXME: About adjustments end */
+
     
 }
 
@@ -629,4 +807,29 @@ mark {
     }
     
     /* FIXME: About adjustments end */
+
+    /* TODO: Projects adjustments */
+    
+    .projects {
+        display: flex;
+        flex-direction: column;
+        gap: 15rem;
+    }
+
+    .project {
+        display: flex;
+        gap: 8rem;
+        align-items: center;
+    }
+
+    .project__content h3,
+    .project__content h4 {
+        direction: rtl;
+    }
+
+    .code__project {
+        justify-content: flex-end;
+    }
+
+    /* FIXME: Projects adjustments end */
 }
