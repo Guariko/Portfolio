@@ -156,6 +156,14 @@ body {
 
 /* FIXME: Header ends */
 
+/* TODO: Aside bar starts */
+
+.aside {
+    display: none;
+}
+
+/* FIXME: Aside bar ends */
+
 /* TODO: Animations */
 
 @keyframes color-effect {
@@ -213,6 +221,7 @@ body {
 
     :root {
         --header-height: 7.5rem;
+        --aside-bar-width: 6rem;
     }
 
     /* FIXME: Setting up the project adjustments end */
@@ -280,5 +289,34 @@ body {
     }
 
     /* FIXME: Header adjustments end */
+
+    /* TODO: Aside bar adjustments */
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: var(--header-height);
+        height: calc(100vh - var(--header-height));
+        width: var(--aside-bar-width);
+        gap: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    .aside .line {
+        height: 8rem;
+        width: 2px;
+        background: var(--third-color);
+    }
+
+    .aside i {
+        font-size: 2.5rem;
+        color: var(--third-color);
+    }
+
+    /* FIXME: Aside bar adjustments end */
     
 }
