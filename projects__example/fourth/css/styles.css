@@ -1,0 +1,867 @@
+/* TODO: Setting up the project starts */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    font-size: 62.5%;
+}
+
+:root {
+    --main-color: #f75571;
+    --second-color: #fefefe;
+    --third-color: #222;
+    --header-height: 8rem;
+    --fourth-color: #f0f4fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+    text-decoration: none;
+    text-transform: none;
+    list-style-type: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: var(--fourth-color);
+}
+
+/* FIXME: Setting up the project ends */
+
+/* TODO: Header starts */
+
+.header__bars span {
+    display: none;
+}
+
+.search__header {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--second-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    height: var(--header-height);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 1rem;
+    z-index: 1000;
+}
+
+.profile__image img {
+    aspect-ratio: 1;
+    width: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+}  
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__image {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.profile__content .profile__name {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 0.2rem;
+}
+
+.profile__content .profile__status {
+    color: var(--third-color);
+    font-size: 1rem;
+}
+
+.header__bars .fa-bars {
+    font-size: 3.5rem;
+    padding: 1rem 1.4rem;
+    background: var(--main-color);
+    border-radius: 100%;
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+/* FIXME: Header ends */
+
+/* TODO: Aside bar starts */
+
+.aside__bar {
+    background: var(--main-color);
+    position: fixed;
+    top: var(--header-height);
+    left: -90%;
+    width: 80%;
+    bottom: 0;
+    padding: 3rem;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    overflow: hidden;
+    z-index: 900;
+}
+
+.aside__bar.active {
+    left: 0;
+}
+
+.aside__bar__item div {
+    width: 4rem;
+}
+
+.aside__bar__item {
+    background: none;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    width: calc(100% + 2%);
+    border-radius: 4rem 0 0 4rem;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.aside__bar__item.active,
+.aside__bar__item:hover {
+    background: var(--second-color);
+}
+
+.aside__bar__item i {
+    font-size: 2.5rem;
+    color: var(--second-color);
+}
+
+.aside__bar__item.active i,
+.aside__bar__item:hover i {
+    color: var(--main-color);
+}
+
+.aside__bar__item .aside__bar__item__information {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.aside__bar__item.active .aside__bar__item__information,
+.aside__bar__item:hover .aside__bar__item__information {
+    color: var(--main-color);
+}
+
+.aside__bar__logo {
+    display: none;
+}
+
+/* FIXME: Aside bar ends /*
+
+/* TODO: Main adjustments */
+
+.main {
+    margin-top: var(--header-height);
+    padding: 5rem 1.5rem;
+    overflow: hidden;
+}
+
+/* FIXME: Main adjustments end */
+
+/* TODO: Dashboard options section starts */
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.options .option {
+    background: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 1rem;
+    width: 24rem;
+    cursor: pointer;
+}
+
+.options .option:hover {
+    background: var(--main-color);
+}
+
+
+.option__content span {
+    color: var(--third-color);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.option:hover .option__content span,
+.option:hover .option__content h2,
+.option:hover .option__icon i {
+    color: var(--second-color);
+}
+
+.option__content h2 {
+    color: #777;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.option__icon i {
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+/* FIXME: Dashboard options section ends */
+
+/* TODO: Table data starts */
+
+.table__content {
+    margin-top: 5rem;
+    background: var(--second-color);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.table__content__introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+
+.table__content__introduction h2 {
+    font-size: 1.6rem;
+}
+
+.button {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1rem;
+    background: var(--main-color);
+    border-radius: 1.5rem;
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+.button:hover {
+    letter-spacing: 0.1rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table__row {
+    text-align: left;
+}
+
+.table__head {
+    font-size: 1.2rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.table__head,
+.table__data__cell {
+    padding: 1rem;
+}
+
+.table__data__cell {
+    font-size: 1rem;
+    color: var(--third-color);
+    font-weight: 600;
+}
+
+.table__row span {
+    display: inline-block;
+    aspect-ratio: 1;
+    height: 1rem;
+    border-radius: 100%;
+}
+
+.table__row .review {
+    background: #5c498c;
+}
+
+.table__row .progress {
+    background: var(--main-color);
+}
+
+.table__row .pending {
+    background: #dd5501;
+}
+
+.table__status {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+/* FIXME: Table data ends */
+
+/* TODO: New customers section starts */
+
+.new--customers--section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new--customers--container {
+    background: var(--second-color);
+    padding: 1rem;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    width: 27rem;
+}
+
+.new__customers__introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.customer .customer__image img {
+    height: 4rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.customer .customer__status {
+    margin-left: 2rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.customer .customer__content h3 {
+    font-size: 1.2rem;
+    color: var(--third-color);
+}
+
+.customer .customer__content span {
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    color: #333;
+}
+
+.new__customers {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.customer__status i {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.new__customers__introduction h2 {
+    font-size: 1.7rem;
+    color: var(--third-color);
+}
+
+/* FIXME: New customers section ends */
+
+/* TODO: Media queries start */
+
+@media screen and (min-width:220px) {
+
+    /* TODO: Aside bar adjustments */
+
+    .aside__bar {
+       overflow: visible;
+       overflow-y: scroll;
+    }
+    
+    .aside__bar::-webkit-scrollbar-track,
+    .aside__bar::-webkit-scrollbar-thumb,
+    .aside__bar::-webkit-scrollbar-track-piece,
+    .aside__bar::-webkit-scrollbar,
+    .aside__bar::-webkit-scrollbar-button,
+    .aside__bar::-webkit-scrollbar-corner {
+        -webkit-appearance: none;
+        width: 0;
+        height: 0;
+    }
+
+    /* FIXME: Aside bar adjustments end */
+}
+
+@media screen and (min-width: 350px) {
+
+    /* TODO: Header adjustments */
+
+    .profile__content .profile__name {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: #000;
+    }
+    
+    .profile__content .profile__status {
+        color: var(--third-color);
+        font-size: 1.1rem;
+    }
+
+    /* FIXME: Header adjustments end */
+
+    /* TODO: Dashboard options adjustments */
+
+    .options .option {
+        width: 26rem;
+    }
+
+    /* FIXME: Dashboard options adjustments */
+
+    /* TODO: Table adjustments */
+
+    .table__data__cell {
+        font-size: 1.3rem;
+    }
+
+    .table__head {
+        font-size: 1.6rem;        
+    }
+
+    .table__content__introduction h2 {
+        font-size: 2.2rem;
+    }
+
+    /* FIXME: Table adjustments end */
+
+    /* TODO: New customers adjustments */
+
+    .new--customers--container {
+        width: 35rem;
+        padding: 2rem;
+    }
+
+    .customer .customer__status {
+        margin-left: 2rem;
+    }
+
+    .customer .customer__image img {
+        height: 5rem;
+    }
+
+    .customer .customer__content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .customer .customer__content span {
+        font-size: 1.2rem;
+    }
+
+    .new__customers__introduction h2 {
+        font-size: 2.2rem;
+    }
+
+    /* FIXME: New customers adjustments end */
+    
+}
+
+@media screen and (min-width:400px) {
+
+    /* TODO: Header adjustments */
+    
+    .header__bars {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header__bars span {
+        display: inline-block;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        color: var(--third-color);
+    }
+
+    /* FIXME: Header adjustments end */
+
+    /* TODO: Dashboard options adjustments */
+
+     .options .option {
+        width: 28rem;
+    }
+
+    /* FIXME: Dashboard options adjustments */
+
+    /* TODO: New customers adjustments */
+
+    .customer .customer__status {
+        margin-left: 4rem;
+    }
+
+    /* FIXME: New customers adjustments end */
+    
+}
+
+@media screen and (min-width:450px) {
+
+    /* TODO: Header adjustments */
+    
+    .header__bars {
+        gap: 1.5rem;
+    }
+
+    /* FIXME: Header adjustments end */
+
+    /* TODO: Dashboard options adjustments */
+
+     .options .option {
+        width: 30rem;
+    }
+
+    /* FIXME: Dashboard options adjustments */
+
+    /* TODO: Table adjustments */
+
+    .table__content__introduction {
+        padding: 2rem;
+    }
+
+    .table__head,
+    .table__data__cell {
+        padding: 2rem;
+    }
+
+    /* FIXME: Table adjustments end */
+
+    /* TODO: New customers adjustments */
+
+    .new--customers--container {
+        width: 40rem;
+    }
+
+    .customer .customer__status {
+        margin-left: 8rem;
+    }
+
+    .customer .customer__status i {
+        font-size: 2rem;
+    }
+
+    /* FIXME: New customers adjustments end */
+    
+}
+
+@media screen and (min-width:500px) {
+
+    /* TODO: Dashboard options adjustments */
+
+    .options .option {
+        width: 21rem;
+    }
+
+    /* FIXME: Dashboard options adjustments */
+
+    /* TODO: New customers adjustments */
+
+    .new--customers--container {
+        width: 44rem;
+    }
+
+    .customer .customer__status {
+        margin-left: 10rem;
+    }
+
+    .customer .customer__status i {
+        font-size: 2.2rem;
+    }
+
+    /* FIXME: New customers adjustments end */
+    
+}
+
+@media screen and (min-width:600px) {
+
+    
+    /* TODO: Dashboard options adjustments */
+
+    .options .option {
+        width: 24rem;
+    }
+
+    /* FIXME: Dashboard options adjustments */
+    
+    /* TODO: New customers adjustments */
+
+    .new--customers--container {
+        width: 52rem;
+    }
+
+    .customer .customer__status {
+        margin-left: 19rem;
+    }
+
+    .customer .customer__status i {
+        font-size: 2.2rem;
+    }
+
+    /* FIXME: New customers adjustments end */
+    
+}
+
+@media screen and (min-width:700px) {
+
+    /* TODO: Header adjustments */
+
+    .search__header {
+        display: block;
+    }
+
+    .header__search__here {
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+        border-radius: 2rem;
+        padding: 1.4rem;
+    }
+
+    .header__search__here input[type="search"] {
+        font-size: 1.5rem;
+        background: none;
+    }
+
+    .header__search__here input[type="search"]::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+    }
+
+    .header__search__here input[type="search"]::placeholder {
+        color: var(--third-color);
+        text-transform: capitalize;
+    }
+
+    .search__header .fa-search {
+        font-size: 2.2rem;
+        margin: 0 2rem 0 1rem;
+        cursor: pointer;
+    }
+
+    /* FIXME: Header adjustments end */
+
+    /* TODO: Aside bar adjustments */
+
+    .aside__bar__logo {
+        display: block;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    .aside__bar__logo span {
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: var(--second-color);
+    }
+
+    .aside__bar {
+        width: 40%;
+    }
+
+    /* FIXME: Aside bar adjustments end */
+
+    /* TODO: Dashboard options adjustments */
+
+    .options .option {
+        width: 26rem;
+    }
+
+    .options {
+        gap: 6rem;
+    }
+
+    /* FIXME: Dashboard options adjustments */
+    
+}
+
+@media screen and (min-width:800px) {
+
+    /* TODO: Dashboard options adjustments */
+
+    .options .option {
+        width: 30rem;
+    }
+
+    /* FIXME: Dashboard options adjustments */
+
+    /* TODO: Table and new customer adjustments */
+
+    .table--and--customers {
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table__content {
+        flex: 1 1;
+    }
+
+    .new--customers--container {
+        width: initial;
+    }
+
+    .customer .customer__status {
+        margin-left: 2rem;
+    }
+
+    .customer .customer__status i {
+        font-size: 2rem;
+    }
+
+    /* FIXME: Table and New customers adjustments end */
+    
+}
+
+@media screen and (min-width:900px) {
+
+    /* TODO: Dashboard options adjustments */
+
+    .options .option {
+        width: 33rem;
+    }
+
+    /* FIXME: Dashboard options adjustments */
+    
+}
+
+@media screen and (min-width:1000px) {
+
+    /* TODO: Header adjustments */
+
+    .header__bars {
+        gap: 0;
+    }
+
+    .header__bars .fa-bars {
+        font-size: 3rem;
+        background: none;
+        border-radius: 0;
+        color: var(--third-color);
+    }
+
+    .header {
+        justify-content: space-between;
+        padding: 0 4rem 0 2rem;
+    }
+
+    /* FIXME: Header adjustments end */
+
+    /* TODO: Aside bar adjustments */
+
+    :root {
+        --left-width-aside-header: 8rem;
+    }
+
+    .header {
+        left: var(--left-width-aside-header);
+    }
+
+    .aside__bar {
+        top: 0;
+        left: 0;
+        padding-left: 1rem;
+        width: var(--left-width-aside-header);  
+        overflow-x: hidden;     
+    }
+
+    .aside__bar__item {
+        gap: 2rem;
+    }
+
+    .aside__bar  .aside__bar__item .aside__bar__item__information {
+        opacity: 0;
+    }
+    .aside__bar.active  .aside__bar__item .aside__bar__item__information {
+        opacity: 1;
+    }
+
+    .aside__bar__logo span {
+        opacity: 0;
+    }
+
+    .aside__bar.active .aside__bar__logo span {
+        opacity: 1;
+    }
+
+    /* FIXME: Aside bar adjustments end */
+
+    /* TODO: Main adjustments */
+
+    .main {
+        margin-left: var(--left-width-aside-header);
+    }
+
+    /* FIXME: Main adjustments end */
+
+    /* TODO: Dashboard options adjustments */
+
+    .options .option {
+        width: 30rem;
+    }
+
+    /* FIXME: Dashboard options adjustments */
+    
+}
+
+@media screen and (min-width:1100px) { 
+
+    /* TODO: Dashboard options adjustments */
+
+    .options .option {
+        width: 24rem;
+    }
+
+    .options {
+        flex-wrap: nowrap;
+        gap: 3rem;
+    }
+
+    /* FIXME: Dashboard options adjustments */
+    
+}
+
+@media screen and (min-width:1200px) { 
+
+    /* TODO: Dashboard options adjustments */
+
+    .options .option {
+        width: 26rem;
+    }
+
+    /* FIXME: Dashboard options adjustments */
+    
+}
+
+/* FIXME: Media queries end */

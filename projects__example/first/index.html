@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/67f918e73f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <!-- TODO: Header starts -->
+    <header>
+      <div class="logo">
+        <a href="#"><i class="fas fa-car"></i>guariko</a>
+      </div>
+
+      <nav class="header__nav__bar__container">
+        <ul class="header--navegation--bar">
+          <li class="header__navegation__bar__item">
+            <a href="#home">home</a>
+          </li>
+          <li class="header__navegation__bar__item">
+            <a href="#about">about</a>
+          </li>
+          <li class="header__navegation__bar__item">
+            <a href="#popular">popular</a>
+          </li>
+          <li class="header__navegation__bar__item">
+            <a href="#featured">featured</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="bars">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <!-- FIXME: Header section ends-->
+
+    <!-- TODO: Main starts -->
+    <main>
+      <!-- TODO: Home section starts -->
+      <section id="home" class="home reveal">
+        <div class="home__car__title">
+          <h1>Choose the best car</h1>
+          <span>porsche mission e</span>
+        </div>
+        <div class="home__car__title__icon">
+          <i class="fas fa-bolt"></i>
+          <span>eletric car</span>
+        </div>
+        <div class="home__image__container">
+          <img src="images/home.png" alt="" />
+        </div>
+        <div class="home__content__container">
+          <div class="home__content">
+            <div>
+              <i class="fas fa-temperature-half"></i>
+            </div>
+            <span class="home__information">24&deg;</span>
+            <div>
+              <span class="home__information__name">temperature</span>
+            </div>
+          </div>
+
+          <div class="home__content">
+            <div>
+              <i class="fa-solid fa-gauge"></i>
+            </div>
+            <span class="home__information km__information">873 km</span>
+            <div>
+              <span class="home__information__name">max</span>
+            </div>
+          </div>
+
+          <div class="home__content">
+            <div>
+              <i class="fas fa-bolt"></i>
+            </div>
+            <span class="home__information">94%</span>
+            <div>
+              <span class="home__information__name">battery</span>
+            </div>
+          </div>
+        </div>
+        <div class="circle__container">
+          <div class="main__circle">
+            <div class="circle">
+              <span>start</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIXME: Home section ends -->
+
+      <!-- TODO: About section starts -->
+      <section id="about" class="about reveal">
+        <div class="about__container">
+          <div class="about__image__size__adjustment__container">
+            <div class="about__image__container">
+              <img src="images/about.png" alt="" />
+              <span class="image__number">2.500+</span>
+            </div>
+          </div>
+          <div class="about__content">
+            <h2>
+              machines with <br />
+              future technology
+            </h2>
+            <p>
+              See the future with high-performance electric cars produced by
+              renowned brands. They feature futuristic builds and designs with
+              new and innovative platforms that last a long time.
+            </p>
+            <div>
+              <span class="button">know more</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIXME: About section ends -->
+
+      <!-- TODO: More features section starts -->
+      <section class="more--features reveal">
+        <h2>more features</h2>
+        <div class="more__features__content">
+          <img src="images/map.svg" alt="" />
+
+          <div class="car__content">
+            <img src="images/featured1.png" alt="" />
+          </div>
+
+          <div class="features__information features__information__1">
+            <div>
+              <span class="main__information">800v</span>
+            </div>
+            <span class="sub__information"> turbo <br />chargin </span>
+          </div>
+          <div class="features__information features__information__2">
+            <div>
+              <span class="main__information">350</span>
+            </div>
+            <span class="sub__information"> km <br />range </span>
+          </div>
+          <div class="features__information features__information__3">
+            <div>
+              <span class="main__information">480</span>
+            </div>
+            <span class="sub__information"> km <br />travel </span>
+          </div>
+        </div>
+      </section>
+      <!-- FIXME: More features section ends -->
+
+      <!-- TODO: Popular section starts -->
+      <section id="popular" class="popular reveal">
+        <h2>Choose your eletric car <br />of the porsche brand</h2>
+        <div class="popular__swiper swiper">
+          <div class="popular__wrapper swiper-wrapper">
+            <!-- TODO: Popular slide 1 -->
+            <div class="popular__slide swiper-slide">
+              <h3>porsche</h3>
+              <div>
+                <span class="car__attribute">turbo 5</span>
+              </div>
+              <img src="images/popular1.png" alt="" />
+              <div class="slide__car__information">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span class="icon__information"> 3.7 sec </span>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span class="icon__information">356 Km/h</span>
+                <div>
+                  <i class="fa-solid fa-battery-full"></i>
+                  <span class="icon__information">eletric</span>
+                </div>
+              </div>
+              <div>
+                <span class="price">$180,000</span>
+              </div>
+              <div class="slide__decoration">
+                <div class="slide__decoration__icon"></div>
+              </div>
+            </div>
+            <!-- FIXME: Popular slide 1 ends -->
+
+            <!-- TODO: Popular slide 2 -->
+            <div class="popular__slide swiper-slide">
+              <h3>porsche</h3>
+              <div>
+                <span class="car__attribute">turbo 5</span>
+              </div>
+              <img src="images/popular2.png" alt="" />
+              <div class="slide__car__information">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span class="icon__information"> 3.7 sec </span>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span class="icon__information">356 Km/h</span>
+                <div>
+                  <i class="fa-solid fa-battery-full"></i>
+                  <span class="icon__information">eletric</span>
+                </div>
+              </div>
+              <div>
+                <span class="price">$180,000</span>
+              </div>
+              <div class="slide__decoration">
+                <div class="slide__decoration__icon"></div>
+              </div>
+            </div>
+            <!-- FIXME: Popular slide 2 ends -->
+
+            <!-- TODO: Popular slide 3 -->
+            <div class="popular__slide swiper-slide">
+              <h3>porsche</h3>
+              <div>
+                <span class="car__attribute">turbo 5</span>
+              </div>
+              <img src="images/popular3.png" alt="" />
+              <div class="slide__car__information">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span class="icon__information"> 3.7 sec </span>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span class="icon__information">356 Km/h</span>
+                <div>
+                  <i class="fa-solid fa-battery-full"></i>
+                  <span class="icon__information">eletric</span>
+                </div>
+              </div>
+              <div>
+                <span class="price">$180,000</span>
+              </div>
+              <div class="slide__decoration">
+                <div class="slide__decoration__icon"></div>
+              </div>
+            </div>
+            <!-- FIXME: Popular slide 3 ends -->
+
+            <!-- TODO: Popular slide 4 -->
+            <div class="popular__slide swiper-slide">
+              <h3>porsche</h3>
+              <div>
+                <span class="car__attribute">turbo 5</span>
+              </div>
+              <img src="images/popular4.png" alt="" />
+              <div class="slide__car__information">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span class="icon__information"> 3.7 sec </span>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span class="icon__information">356 Km/h</span>
+                <div>
+                  <i class="fa-solid fa-battery-full"></i>
+                  <span class="icon__information">eletric</span>
+                </div>
+              </div>
+              <div>
+                <span class="price">$180,000</span>
+              </div>
+              <div class="slide__decoration">
+                <div class="slide__decoration__icon"></div>
+              </div>
+            </div>
+            <!-- FIXME: Popular slide 4 ends -->
+
+            <!-- TODO: Popular slide 5 -->
+            <div class="popular__slide swiper-slide">
+              <h3>porsche</h3>
+              <div>
+                <span class="car__attribute">turbo 5</span>
+              </div>
+              <img src="images/popular5.png" alt="" />
+              <div class="slide__car__information">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span class="icon__information"> 3.7 sec </span>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span class="icon__information">356 Km/h</span>
+                <div>
+                  <i class="fa-solid fa-battery-full"></i>
+                  <span class="icon__information">eletric</span>
+                </div>
+              </div>
+              <div>
+                <span class="price">$180,000</span>
+              </div>
+              <div class="slide__decoration">
+                <div class="slide__decoration__icon"></div>
+              </div>
+            </div>
+            <!-- FIXME: Popular slide 5 ends -->
+
+            <!-- TODO: Popular slide 6 -->
+            <div class="popular__slide swiper-slide">
+              <h3>porsche</h3>
+              <div>
+                <span class="car__attribute">turbo 5</span>
+              </div>
+              <img src="images/popular1.png" alt="" />
+              <div class="slide__car__information">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span class="icon__information"> 3.7 sec </span>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span class="icon__information">356 Km/h</span>
+                <div>
+                  <i class="fa-solid fa-battery-full"></i>
+                  <span class="icon__information">eletric</span>
+                </div>
+              </div>
+              <div>
+                <span class="price">$180,000</span>
+              </div>
+              <div class="slide__decoration">
+                <div class="slide__decoration__icon"></div>
+              </div>
+            </div>
+            <!-- FIXME: Popular slide 6 ends -->
+
+            <!-- TODO: Popular slide 7 -->
+            <div class="popular__slide swiper-slide">
+              <h3>porsche</h3>
+              <div>
+                <span class="car__attribute">turbo 5</span>
+              </div>
+              <img src="images/popular2.png" alt="" />
+              <div class="slide__car__information">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span class="icon__information"> 3.7 sec </span>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span class="icon__information">356 Km/h</span>
+                <div>
+                  <i class="fa-solid fa-battery-full"></i>
+                  <span class="icon__information">eletric</span>
+                </div>
+              </div>
+              <div>
+                <span class="price">$180,000</span>
+              </div>
+              <div class="slide__decoration">
+                <div class="slide__decoration__icon"></div>
+              </div>
+            </div>
+            <!-- FIXME: Popular slide 7 ends -->
+
+            <!-- TODO: Popular slide 8 -->
+            <div class="popular__slide swiper-slide">
+              <h3>porsche</h3>
+              <div>
+                <span class="car__attribute">turbo 5</span>
+              </div>
+              <img src="images/popular3.png" alt="" />
+              <div class="slide__car__information">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span class="icon__information"> 3.7 sec </span>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span class="icon__information">356 Km/h</span>
+                <div>
+                  <i class="fa-solid fa-battery-full"></i>
+                  <span class="icon__information">eletric</span>
+                </div>
+              </div>
+              <div>
+                <span class="price">$180,000</span>
+              </div>
+              <div class="slide__decoration">
+                <div class="slide__decoration__icon"></div>
+              </div>
+            </div>
+            <!-- FIXME: Popular slide 8 ends -->
+
+            <!-- TODO: Popular slide 9 -->
+            <div class="popular__slide swiper-slide">
+              <h3>porsche</h3>
+              <div>
+                <span class="car__attribute">turbo 5</span>
+              </div>
+              <img src="images/popular4.png" alt="" />
+              <div class="slide__car__information">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span class="icon__information"> 3.7 sec </span>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span class="icon__information">356 Km/h</span>
+                <div>
+                  <i class="fa-solid fa-battery-full"></i>
+                  <span class="icon__information">eletric</span>
+                </div>
+              </div>
+              <div>
+                <span class="price">$180,000</span>
+              </div>
+              <div class="slide__decoration">
+                <div class="slide__decoration__icon"></div>
+              </div>
+            </div>
+            <!-- FIXME: Popular slide 9 ends -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- FIXME: Popular section ends -->
+
+      <!-- TODO: Featured section starts -->
+      <section id="featured" class="featured reveal">
+        <h2>featured luxury cars</h2>
+        <div class="featured__logos">
+          <div class="logo__class active all">
+            <span class="all__logos">all</span>
+          </div>
+          <div class="logo__class porsche">
+            <img src="images/logo1.png" alt="" />
+          </div>
+          <div class="logo__class other">
+            <img src="images/logo2.png" alt="" />
+          </div>
+          <div class="logo__class tesla">
+            <img src="images/logo3.png" alt="" />
+          </div>
+        </div>
+        <div class="featured__grid">
+          <div class="featured__grid__content tesla active">
+            <h3>tesla</h3>
+            <span class="sub__title">model x</span>
+            <div class="featured__grid__img">
+              <img src="images/featured1.png" alt="" />
+            </div>
+            <span class="price">$90.000</span>
+            <div class="grid__content__decoration">
+              <div class="grid__content__sub__decoration"></div>
+            </div>
+          </div>
+          <div class="featured__grid__content tesla active">
+            <h3>tesla</h3>
+            <span class="sub__title">model x</span>
+            <div class="featured__grid__img">
+              <img src="images/featured2.png" alt="" />
+            </div>
+            <span class="price">$90.000</span>
+            <div class="grid__content__decoration">
+              <div class="grid__content__sub__decoration"></div>
+            </div>
+          </div>
+          <div class="featured__grid__content other active">
+            <h3>audi</h3>
+            <span class="sub__title">model x</span>
+            <div class="featured__grid__img">
+              <img src="images/featured3.png" alt="" />
+            </div>
+            <span class="price">$90.000</span>
+            <div class="grid__content__decoration">
+              <div class="grid__content__sub__decoration"></div>
+            </div>
+          </div>
+          <div class="featured__grid__content porsche active">
+            <h3>porsche</h3>
+            <span class="sub__title">model x</span>
+            <div class="featured__grid__img">
+              <img src="images/featured4.png" alt="" />
+            </div>
+            <span class="price">$90.000</span>
+            <div class="grid__content__decoration">
+              <div class="grid__content__sub__decoration"></div>
+            </div>
+          </div>
+          <div class="featured__grid__content porsche active">
+            <h3>porsche</h3>
+            <span class="sub__title">model x</span>
+            <div class="featured__grid__img">
+              <img src="images/featured5.png" alt="" />
+            </div>
+            <span class="price">$90.000</span>
+            <div class="grid__content__decoration">
+              <div class="grid__content__sub__decoration"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIXME: Featured section ends -->
+
+      <!-- TODO: Offer section starts -->
+      <section class="offer reveal">
+        <div class="offer__image__container">
+          <img src="images/offer.png" alt="" />
+        </div>
+        <div class="offer__content">
+          <h2>Do you want to receive <br />special offers?</h2>
+          <p>
+            be the first to receive all the information about our products and
+            new cars by email by subscribing to our mailing list
+          </p>
+          <span class="button">subscribe now</span>
+        </div>
+      </section>
+      <!-- FIXME: Offer section ends -->
+    </main>
+    <!-- FIXME: Main ends -->
+
+    <!-- TODO: Footer section starts -->
+    <footer class="footer reveal">
+      <div class="footer__information footer__information__phone">
+        <a href="#"><i class="fas fa-car"></i>guariko</a>
+        <p>
+          we offer the best eletric cars of<br />
+          the most recognized brands in <br />
+          the world
+        </p>
+      </div>
+      <div class="footer__nav__bar__phone">
+        <div class="footer__information">
+          <div>
+            <span class="header">company</span>
+          </div>
+          <nav>
+            <ul class="footer__nav__bar">
+              <li class="footer__nav__bar__item">about</li>
+              <li class="footer__nav__bar__item">cars</li>
+              <li class="footer__nav__bar__item">history</li>
+              <li class="footer__nav__bar__item">shop</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__information">
+          <div>
+            <span class="header">information</span>
+          </div>
+          <nav>
+            <ul class="footer__nav__bar">
+              <li class="footer__nav__bar__item">contact us</li>
+              <li class="footer__nav__bar__item">services</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer__information footer__information__phone">
+        <span class="header">follow us</span>
+        <div class="header__icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- FIXME: Footer section ends -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
