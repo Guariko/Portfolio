@@ -1,0 +1,1333 @@
+/* TODO: Setting up the project */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont,
+                'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+                'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #0a0a0b;
+    --second-color: #e2e3e4;
+    --hover-color: #4177dc;
+    --letters-color: #5d5f63;
+    --second-letter-color: rgb(156, 156, 156);
+    --circle-color: #05905d;
+    --paragraph-color: #6c6e72;
+}
+
+body {
+    background: var(--main-color);
+}
+
+h1, h2, h3, h4, h5, h6, i, a, span {
+    color: var(--second-color);
+}
+
+p {
+    color: var(--letters-color);
+}
+
+/* FIXME: Setting up the project ends */
+
+/* TODO: Header section starts */
+
+header {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-y: visible;
+    z-index: 1000;
+    background: var(--main-color);
+}
+
+.logo {
+    flex: 1 1;
+}
+
+.bars {
+    flex: 1 1;
+}
+
+.logo a {
+    font-size: 2.2rem;
+}
+
+.logo a:hover,
+.logo a:hover i {
+    color: var(--hover-color);
+}
+
+.logo a i {
+    margin-right: 0.6rem;
+}
+
+.bars {
+    font-size: 4rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bars .fa-bars:hover {
+    color: var(--hover-color);
+}
+
+.header__nav__bar__container {
+    position: absolute;
+    top: 100%;
+    height: 100vh;
+    left: 110%;
+    width: 35%;
+    background: #2D2C31;
+}
+
+.header--navegation--bar {
+    list-style-type: none;
+}
+
+.header--navegation--bar .header__navegation__bar__item {
+    font-size: 1.8rem;
+    padding: 3rem 0.5rem 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav__bar__container .header__navegation__bar__item:hover {
+    background: var(--hover-color);
+}
+
+.header__nav__bar__container.show {
+    left: 65%;
+}
+
+/* FIXME: Header section ends */
+
+/* TODO: Main adjustments */
+
+main {
+    margin-top: 8rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* FIXME: Main adjustments end */
+
+/* TODO: Home section starts */
+
+.home img {
+    width: 24rem;
+    height: 14rem;
+}
+
+.home .home__car__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .home__car__title h1 {
+    font-size: 2.5rem;
+}
+
+.home .home__car__title span {
+    font-size: 1.6rem;
+    color: var(--second-color);
+}
+
+.home .home__car__title__icon {
+    text-align: center;
+    margin: 1.5rem 0 3rem;
+}
+
+.home .home__car__title__icon span {
+    color: var(--second-letter-color);
+}
+
+.home .home__car__title__icon i {
+    color: var(--hover-color);
+    margin-right: 0.2rem;
+}
+
+.home .home__image__container {
+    text-align: center;
+}
+
+.home .home__content__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.home .home__content__container .home__content i {
+    background: rgba(26, 25, 25, 0.6);
+    padding: 0.6rem;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+.home .home__content__container .home__content i:hover {
+    color: var(--hover-color);
+}
+
+.home .home__content {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.home .home__content .home__information {
+    display: inline-block;
+    margin: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.home .home__content .home__information__name {
+    color: var(--second-letter-color);
+}
+
+.home .circle__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+.home .main__circle,
+.home .main__circle .circle {
+    border: 0.2rem solid var(--circle-color);
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: 0 0 2rem 0.1rem var(--circle-color);
+    animation: my-color-change 6s linear 0s infinite normal;
+}
+
+
+.home .main__circle .circle {
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+.home .main__circle .circle span {
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.home .main__circle .circle span:hover {
+    letter-spacing: 0.1rem;
+    color: var(--hover-color);
+}
+
+/* FIXME: Home section ends */
+
+/* TODO: About section starts */
+
+.about {
+    padding: 4rem 1rem;
+}
+
+.about .about__image__size__adjustment__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.about__image__container {
+    position: relative;
+    text-align: center;
+    max-width: 32rem;
+}
+
+.about__image__container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+
+.about__image__container .image__number {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 60%;
+    z-index: 100;
+    background: rgba(93, 95, 99, 0.5);
+    padding: 0.8rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.about .about__content h2 {
+    font-size: 2.2rem;
+}
+
+.about .about__content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 50ch;
+    margin: 2rem 0 5rem;
+    color: var(--paragraph-color);
+}
+
+.button {
+    background: #4177dc;
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button:hover {
+    letter-spacing: 0.1rem;
+}
+
+/* FIXME: About section ends */
+
+/* TODO: More features start */
+
+.more--features {
+    padding: 6rem 2rem;
+}
+
+.more--features h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 6rem;
+}
+
+.more--features .more__features__content {
+    text-align: center;
+    position: relative;
+}
+
+.more--features .more__features__content img {
+    width: 100%;
+    height: 100%;
+    max-width: 50rem;
+    max-height: 50rem;
+}
+
+.more--features .more__features__content .car__content img {
+    width: 100%;
+    height: 60%;
+    max-width: 35rem;
+}
+
+.more--features .more__features__content .car__content {
+    position: absolute;
+    top: 15%;
+    left: 38%;
+    right: 20%;
+    bottom: 10%;
+}
+
+.more__features__content .features__information {
+    position: absolute;
+    z-index: 900;
+    background: rgba(93, 95, 99, 0.5);
+    backdrop-filter: blur(3px);
+    padding: 0.6rem 1.2rem;
+    border-radius: 1.5rem;
+}
+
+.more__features__content .features__information__1 {
+    top: 10%;
+    left: 20%;
+}
+
+.more__features__content .features__information__2 {
+    top: 30%;
+    right: 10%;
+}
+
+.more__features__content .features__information__3 {
+    top: 45%;
+    left: 20%;
+}
+
+.features__information .main__information {
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.features__information .sub__information {
+    font-size: 1rem;
+    display: inline-block;
+    padding: 0.4rem;
+    color: rgb(219, 213, 213, 0.7);
+}
+
+/* FIXME: More features section ends */
+
+/* TODO: Popular section starts */
+
+.popular {
+    padding: 0 0 4rem 0;
+}
+
+.popular h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+}
+
+.popular .popular__slide {
+    border: 0.1rem solid rgba(93, 95, 99, 0.2);
+    padding: 2rem;
+    position: relative;
+    border-radius: 1rem;
+    cursor: pointer;
+    background: rgba(46, 45, 45, 0.6);
+}
+
+.popular .popular__slide img {
+    width: 80%;
+    max-height: 50%;
+    margin-left: 4rem;
+}
+
+.popular .popular__slide h3 {
+    font-size: 1.8rem;
+}
+
+.popular .popular__slide .car__attribute {
+    font-size: 1.2rem;
+    color: var(--second-letter-color);
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.popular .popular__slide .slide__car__information {
+    padding: 1rem 0;
+}
+
+.popular .popular__slide .slide__car__information div:first-of-type {
+    margin-top: 0.6rem;
+}
+
+.popular .popular__slide .slide__car__information i {
+    font-size: 1.2rem;
+}
+
+.popular .popular__slide .slide__car__information .icon__information {
+    display: inline-block;
+    margin-right: 1rem;
+    text-transform: none;
+    margin-left: 0.5rem;
+}
+
+.popular .popular__slide .price {
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.popular .popular__slide .slide__decoration {
+    position: absolute;
+    background: var(--hover-color);
+    bottom: 0;
+    right: 0;
+    left: 80%;
+    top: 82%;
+    border-radius: 1rem 0 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular .popular__slide .slide__decoration .slide__decoration__icon {
+    width: 60%;
+    height: 60%;
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    background: var(--second-color);
+}
+
+.popular .popular__swiper {
+    padding: 3rem 3rem 6rem;
+}
+
+#popular .swiper-pagination-bullet {
+    background: var(--letters-color);
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+#popular .swiper-pagination-bullet-active {
+    background: var(--hover-color);
+    z-index: 800;
+}
+
+/* FIXME: Popular section ends */
+
+/* TODO: Featured section starts */
+
+.featured {
+    padding: 2rem;
+}
+
+.featured h2 {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.featured .featured__logos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 6rem 0 8rem;
+}
+
+.featured .featured__logos .all__logos,
+.featured .featured__logos img {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.featured .logo__class {
+    background: rgba(46, 45, 45, 0.6);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.featured .logo__class.active {
+    background: var(--hover-color);
+}
+
+.featured .featured__logos .all__logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.featured .featured__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 22rem));
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.featured .featured__grid .featured__grid__img {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured .featured__grid .featured__grid__img img {
+    width: 80%;
+    height: 70%;
+}
+
+.featured .featured__grid .featured__grid__content {
+    background: rgba(46, 45, 45, 0.6);
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+    display: none;
+}
+
+.featured .featured__grid .featured__grid__content.active {
+    display: block;
+}
+
+.featured .featured__grid .featured__grid__content:hover .featured__grid__img img {
+    width: 95%;
+    height: 82%;
+}
+
+.featured .featured__grid__content h3 {
+    font-size: 2rem;
+
+}
+
+.featured .featured__grid__content .sub__title {
+    font-size: 1.2rem;
+    color: var(--second-letter-color);
+    display: inline-block;
+    padding: 1rem 0;
+}
+
+.featured .featured__grid__content .price {
+    font-size: 2rem;
+    display: inline-block;
+    color: var(--second-color);
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+
+.grid__content__decoration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 75%;
+    top: 85%;
+    background: var(--hover-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem 0 0 0.7rem;
+}
+
+.grid__content__decoration .grid__content__sub__decoration {
+    width: 60%;
+    height: 60%;
+    background: var(--second-color);
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+
+/* FIXME: Featured section ends */
+
+/* TODO: Offer section starts */
+
+.offer {
+    padding: 4rem 2rem;
+    margin-top: 8rem;
+}
+
+.offer .offer__image__container {
+    text-align: center;
+}
+
+.offer img {
+    width: 80%;
+    max-height: 22rem;
+}
+
+.offer .offer__content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 50ch;
+}
+
+.offer .offer__content h2 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin: 1.3rem 0;
+}
+
+.offer .button {
+    margin: 2rem 0;
+}
+
+/* FIXME: Offers section ends */
+
+/* TODO: Footer starts */
+
+.footer {
+    padding: 1rem 0 3rem 0;
+}
+
+.footer .footer__information a{
+    font-size: 2.5rem;
+}
+
+.footer .footer__information a i {
+    margin-right: 0.5rem;
+}
+
+.footer .footer__information p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.footer .footer__information__phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer__nav__bar__phone {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.footer__nav__bar {
+    list-style-type: none;
+}
+
+.footer__nav__bar .footer__nav__bar__item {
+    color: var(--second-letter-color);
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.footer__information .header {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+}
+
+.footer .footer__information__phone .header {
+    margin: 1.7rem 0 0 0;
+}
+
+.footer .footer__information i {
+    font-size: 1.5rem;
+    color: var(--second-color);
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+/* FIXME: Footer ends */
+
+
+/* TODO: Animations */
+
+@keyframes my-color-change {
+    
+    10% {
+        box-shadow: 0 0 2rem 0.1rem #10c280;
+    }
+
+    30% {
+        box-shadow: 0 0 2rem 0.1rem #0b6644;
+    }
+    
+    50% {
+        box-shadow: 0 0 2rem 0.1rem #15a570;
+    }
+
+    80% {
+        box-shadow: 0 0 2rem 0.1rem #0e6444;
+
+    }
+
+    100% {
+        box-shadow: 0 0 2rem 0.1rem var(--circle-color);
+    }
+}
+
+/* FIXME: Animations end */
+
+
+/* TODO: Media queries start */
+
+@media screen and (min-width:280px) {
+
+    /* TODO: Popular section adjustments */
+
+    .popular .popular__slide .slide__car__information .icon__information {
+        margin-right: 2rem;
+    }
+
+     /* FIXME: Popular section adjustments end */
+}
+
+@media screen and (min-width:400px) {
+     
+    /* TODO: Header adjustments */
+
+    .header--navegation--bar .header__navegation__bar__item {
+        padding: 3rem 1rem 3rem;
+    }
+
+    /* FIXME: Header adjustments end */
+
+    /* TODO: Home section adjustments */
+
+    .home .home__content__container {
+        gap: 5rem;
+    }
+
+    /* FIXME: Home section adjustments end */
+
+    /* TODO: About section starts */
+
+    .about {
+        padding: 4rem 4rem;
+    }
+
+    /* FIXME: About section ends */
+
+    /* TODO: More features adjustments */
+
+    .more__features__content .features__information__1 {
+        left: 28%;
+    }
+    
+    .more__features__content .features__information__2 {
+        right: 10%;
+    }
+    
+    .more__features__content .features__information__3 {
+        left: 28%;
+    }
+
+    .more__features__content .features__information {
+        padding: 1rem 2rem;
+    }
+
+    /* FIXME: More feaaturs adjustments end */
+
+    /* TODO: Popular adjustments */
+
+    .popular .popular__slide h3 {
+        font-size: 2rem;
+    }
+
+    .popular .popular__slide .car__attribute {
+        font-size: 1.4rem;
+    }
+
+    .popular .popular__slide .price {
+        font-size: 2rem;
+    }
+
+    .popular .popular__slide .slide__car__information i {
+        font-size: 1.4rem;
+    }
+    
+    .popular .popular__slide .slide__car__information .icon__information {
+        font-size: 1.2rem;
+    }
+
+    .popular {
+        padding: 0 2rem 4rem;
+    }
+
+    .popular h2 {
+        font-size: 2.4rem;
+    }
+
+    .popular .popular__slide .slide__car__information .icon__information {
+        margin-right: 4rem;
+    }
+
+    /* FIXME: Popular adjustments end */
+    
+    /* TODO: Offer adjustments */
+
+    .offer .offer__content h2 {
+        font-size: 2rem;
+    }
+
+    .offer {
+        padding: 4rem 4rem;
+    }
+
+    .offer .button {
+        margin: 4rem 0 2rem;
+    }
+
+    /* FIXME: Offer adjustments end */
+    
+}
+
+@media screen and (min-width:500px) {
+    
+    /* TODO: Header adjustments */
+     
+    header {
+        padding: 2rem 2rem 2rem 4rem;
+    }
+
+    .header__nav__bar__container {
+        width: 30%;
+    }
+
+    .header__nav__bar__container.show {
+        left: 70%;
+    }
+    
+    /* FIXME: Header adjustments end */
+    
+    /* TODO: More features adjustments */
+
+    .more--features h2 {
+        font-size: 2.6rem;
+    }
+
+    /* FIXME: More features adjustments end */
+    
+    /* TODO: Popular adjustments */
+
+    .popular h2 {
+        font-size: 2.6rem;
+    }
+
+    /* FIXME: Popular adjustments end */
+
+    /* TODO: Offer adjustments */
+
+    .offer .offer__content h2 {
+        font-size: 2.5rem;
+    }
+
+    .offer .offer__content p {
+        font-size: 1.4rem;
+    }
+
+    /* FIXME: Offer adjustments end */
+    
+}
+
+@media screen and (min-width:600px) {
+    
+    /* TODO: Setup adjustments */
+
+    html {
+        font-size: 70%;
+    }
+
+    /* FIXME: Setup adjustments end */
+
+    /* TODO: Home section adjustments */
+    
+    .home img {
+        width: 28rem;
+        height: 18rem;
+    }
+    
+
+    .home .home__content__container {
+        gap: 8rem;
+    }
+
+    /* FIXME: Home section adjustments end */
+    
+    /* TODO: About section adjsutments */
+
+    .about__image__container .image__number {
+        font-size: 1.3rem;
+    }
+    
+    .about .about__content h2 {
+        font-size: 2.6rem;
+    }
+    
+    /* FIXME: About section adjsutments end */
+    
+    /* TODO: More features adjustments */
+
+    .features__information .main__information {
+        font-size: 1.8rem;
+    }
+
+    .more--features h2 {
+        font-size: 2.8rem;
+    }
+
+    /* FIXME: More features adjustments end */
+    
+    /* TODO: Popular adjustments */
+
+    .popular h2 {
+        font-size: 2.8rem;
+    }
+
+    /* FIXME: Popular adjustments end */
+    
+    /* TODO: Featured adjustments */
+
+    .featured h2 {
+        font-size: 2.8rem;
+    }
+
+    .featured .featured__logos {
+        margin: 6rem 0 10rem;
+    }
+
+    .featured .featured__logos .all__logos,
+    .featured .featured__logos img {
+        width: 6rem;
+        height: 6rem;
+        padding: 1.2rem;
+    }
+
+    .featured .featured__grid__content .sub__title {
+        font-size: 1.5rem;
+    }
+
+    .featured .featured__grid__content h3 {
+        font-size: 2.4rem;
+    
+    }
+
+    .featured .featured__grid__content .price {
+        font-size: 2.4rem;
+    }
+
+    /* FIXME: Featured adjustments end */
+    
+    /* TODO: Offers adjustments */
+
+    .offer .offer__content h2 {
+        font-size: 2.8rem;
+    }
+
+    /* FIXME: Offers adjustments end */
+    
+}
+
+@media screen and (min-width:700px) {
+    
+    /* TODO: Home section adjustments */
+    
+    .home .main__circle,
+    .home .main__circle .circle {
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    .home .main__circle .circle {
+        width: 8.5rem;
+        height: 8.5rem;
+    }
+    
+    .home .main__circle .circle span {
+        font-size: 1.3rem;
+    }
+
+    /* FIXME: Home section adjustments end */
+
+    /* TODO: More features adjustments */
+
+    .more__features__content .features__information__1 {
+        left: 35%;
+    }
+    
+    .more__features__content .features__information__2 {
+        right: 15%;
+    }
+    
+    .more__features__content .features__information__3 {
+        left: 35%;
+    }
+
+    .more__features__content .features__information {
+        padding: 1rem 3rem;
+    }
+
+    /* FIXME: More feaaturs adjustments end */
+
+    
+    /* FIXME: More features adjustments end */
+
+    .popular h2 {
+        font-size: 3rem;
+    }
+
+    /* FIXME: Popular adjustments end */
+
+    /* TODO: Offers adjustments */
+
+    .offer .offer__content h2 {
+        font-size: 3rem;
+    }
+
+    /* FIXME: Offers adjustments end */
+
+}
+
+@media screen and (min-width:800px) {
+    
+    /* TODO: Header adjustments */
+
+    .bars {
+        display: none;
+    }
+
+    .header__nav__bar__container {
+        position: initial;
+        width: initial;
+        height: initial;
+        background: none;
+    }
+
+    .header--navegation--bar {
+        display: flex;
+        gap: 1.5rem;
+        margin-right: 2rem;
+    }
+
+    .header--navegation--bar .header__navegation__bar__item {
+        padding: 1.5rem;
+    }
+    
+    .header__nav__bar__container .header__navegation__bar__item:hover {
+        background: none;
+    }
+
+    .header__nav__bar__container .header__navegation__bar__item a:hover {
+        color: var(--hover-color);
+    }
+
+    /* FIXME: Header adjustments end */
+    
+    /* TODO: About section adjustments starts */
+
+    .about {
+        padding: 4rem 2rem;
+    }
+
+    .about__container {
+        display: flex;
+        gap: 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__image__container {
+        height: 30rem;
+        max-width: 42rem;
+    }
+
+    /* FIXME: About section adjustments ends */
+    
+    /* TODO: Offers adjustments */
+
+    .offer {
+        display: flex;
+        flex-direction: row-reverse;
+        background: url(../images/offer-bg.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding: 2rem 2rem 6rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    /* FIXME: Offers adjustments end */
+
+    /* TODO: Footer adjustments */
+
+    
+    .footer__nav__bar__phone {   
+        margin-top: 0;
+        gap: 8rem;
+    }
+
+    
+    .footer .footer__information__phone {
+        display: block;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 4rem 2rem;
+    }
+
+    .footer__information .header__icons {
+        margin-top: 2rem;
+    }
+
+    /* FIXME: Footer adjustments end */
+    
+}
+
+@media screen and (min-width:900px) {
+    
+    /* TODO: Header adjustments */
+     
+    header {
+        padding: 2rem 2rem 2rem 8rem;
+    }
+
+    .header--navegation--bar .header__navegation__bar__item {
+        font-size: 2rem;
+    }
+
+    .logo a {
+        font-size: 2.5rem;
+    }
+
+    /* FIXME: Header adjustments end */
+    
+
+    /* TODO: Home adjustments */
+
+    .home .home__car__title h1 {
+        font-size: 3.2rem;
+    }
+
+    .home .home__car__title span {
+        font-size: 2rem;
+        color: var(--second-color);
+    }
+
+    /* FIXME: Home adjustments end */
+    
+    /* TODO: About section adjustments */
+    .about__image__container {
+        height: 35rem;
+    }
+
+    /* FIXME: About section adjustments end */
+    
+    /* TODO: More features adjustments */
+
+    .more--features h2 {
+        font-size: 3rem;
+    }
+
+    /* FIXME: More features adjustments end */
+    
+    /* TODO: Offers adjsutments */
+
+    .offer img {
+        max-height: 28rem;
+    }
+
+    /* FIXME: Offers adjustments end */
+    
+}
+
+@media screen and (min-width: 1000px) {
+    
+    /* TODO: Header adjustments */
+
+    .header--navegation--bar {
+        margin-right: 6rem;
+    }
+
+    /* FIXME: Header adjustments end */
+
+    /* TODO: More features adjustments */
+
+    .more__features__content .features__information__1 {
+        left: 40%;
+    }
+    
+    .more__features__content .features__information__2 {
+        right: 20%;
+    }
+    
+    .more__features__content .features__information__3 {
+        left: 40%;
+    }
+
+    .more--features h2 {
+        font-size: 3.2rem;
+    }
+
+    /* FIXME: More features adjustments end */
+
+    /* TODO: Offers adjustments */
+
+    .offer .offer__content h2 {
+        font-size: 3.3rem;
+    }
+
+    /* FIXME: Offers adjustments end */
+    
+}
+
+@media screen and (min-width:1100px) {
+
+    /* TODO: Footer adjustments */
+
+    .footer__nav__bar__phone {   
+        gap: 10rem;
+    }
+
+    /* FIXME: Footer adjsutments end */
+}
+
+@media screen and (min-width: 1200px) {
+    
+    /* TODO: Header adjustments */
+
+    .header--navegation--bar {
+        margin-right: 8rem;
+    }
+
+    /* FIXME: Header adjustments end */
+    
+    /* TODO: About section adjustments */
+
+    .about__container {
+        gap: 10rem;
+    }
+
+    /* FIXME: About section adjustments end */
+
+     /* TODO: More features adjustments */
+
+     .more__features__content .features__information__1 {
+        left: 45%;
+    }
+    
+    .more__features__content .features__information__2 {
+        right: 24%;
+    }
+    
+    .more__features__content .features__information__3 {
+        left: 45%;
+    }
+
+    .more--features h2 {
+        font-size: 3.5rem;
+    }
+
+    /* FIXME: More feaaturs adjustments end */
+    
+    /* TODO: Popular adjustments */
+
+    .popular {
+        padding: 0 10% 4rem;
+    }
+
+    /* FIXME: Popular adjustments end */
+    
+    /* TODO: Featured adjustments */
+
+    .featured {
+        padding: 5rem 10%;
+    }
+
+    /* FIXME: Featured adjustments end */
+
+    /* TODO: Footer adjustments */
+
+    .footer__nav__bar__phone {   
+        gap: 12rem;
+    }
+
+    /* FIXME: Footer adjsutments end */
+    
+}
+
+/* FIXME: Media queries end */

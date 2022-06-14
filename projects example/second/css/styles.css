@@ -1,0 +1,1089 @@
+/* TODO: Setting up the project */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
+    transition: all 0.2s linear;
+}
+
+:root {
+    --main-color: #ffffff;
+    --second-color: #3e6553;
+    --headers-color: #252826; 
+    --letters-color: #c9cbca;
+    --letter-size: 1.2rem;
+    --header-sizes: 3rem;
+    --header-height: 8rem;
+    --main-padding: 2rem;
+}
+
+p {
+    color: #444;
+    font-size: var(--letter-size);
+    line-height: 1.5;
+    max-width: 50ch;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    color: var(--headers-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: var(--header-sizes);
+}
+
+i {
+    color: var(--second-color);
+}
+
+body {
+    background: var(--main-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                 'Helvetica Neue', sans-serif;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    background: var(--second-color);
+    border-radius: 1rem;
+    text-align: center;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.button:hover {
+    letter-spacing: 0.1rem;
+}
+
+/* FIXME: Setting up the project ends */
+
+/* TODO: Header section starts */ 
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: var(--main-padding);
+    overflow-y: visible;
+    z-index: 900;
+    background: var(--main-color);
+}
+
+.header .header__logo__container a {
+    font-size: 2.6rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.header .fa-bars {
+    font-size: 4.2rem;
+    cursor: pointer;
+}
+
+.header__nav__bar__container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -110vh;
+    height: 100vh;
+    background: rgba(221, 221, 221, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+}
+
+.header__nav__bar__container .header__nav__bar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+
+.header__nav__bar__container .header__nav__bar a {
+    font-size: 3.2rem;
+    text-transform: capitalize;
+}
+
+.header__nav__bar .moon__container {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.header__nav__bar__container .fa-times {
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    font-size: 6rem;
+    color: var(--headers-color);
+    cursor: pointer;
+}
+
+.header__nav__bar__container .fa-times:hover {
+    color: var(--second-color);
+}
+
+.header__nav__bar__container.active {
+    top: 0;
+}
+
+.header__item__decoration {
+    display: none;
+}
+
+/* FIXME: Header section ends */
+
+/* TODO: Main setups */
+.main {
+    margin-top: var(--header-height);
+    padding: var(--main-padding);
+    overflow-x: hidden;
+}
+
+/* FIXME: Main setups end */
+
+/* TODO: Home section starts */
+
+.home .home__img__container img {
+    width: 100%;
+    height: 100%;
+    max-width: 40rem;
+    max-height: 40rem;
+}
+
+.home .home__content p {
+    margin: 2rem 0;
+}
+
+.home {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+
+.home .home__image__icons {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.home .home__green__line {
+    width: 0.2rem;
+    height: 2rem;
+    background: var(--second-color);
+    margin: 0.3rem 0;
+}
+
+.home .home__icons__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.home .home__icons__container .follow {
+    writing-mode: vertical-lr;
+    color: var(--second-color);
+    font-weight: 500;
+}
+
+/* FIXME: Home section ends */
+
+/* TODO: About section starts */
+
+.about .about__image__container img {
+    width: 100%;
+    height: 100%;
+    max-height: 42rem;
+    max-width: 42rem;
+}
+
+.about {
+    margin-top: 8rem;
+}
+
+.about .about__image__container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about .about__content p {
+    margin: 2rem 0 3rem 0;
+}
+
+.about__content .right__container .right__background {
+    width: 1.6rem;
+    height: 1.6rem;
+    background: var(--second-color);
+}
+
+.right__background .right {
+    width: 100%;
+    height: 98%;
+    clip-path: polygon(86% 7%, 100% 9%, 39% 100%, 0 70%, 0 48%, 34% 79%);
+    background: var(--main-color);
+}
+
+.about__content .right__container {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.right__container .right__content {
+    font-size: 1.1rem;
+}
+
+.about .button {
+    margin: 2rem 0;
+}
+
+.button .fa-arrow-down {
+    color: var(--main-color);
+    margin-left: 0.5rem;
+}
+
+/* FIXME: About section ends */
+
+/* TODO: Steps start */
+
+.steps {
+    background: var(--second-color);
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-top: 6rem;
+}
+
+.steps h2 {
+    text-align: center;
+    color: var(--main-color);
+}
+
+.steps .step h3 {
+    font-size: calc(var(--header-sizes) - 1rem);
+    margin-bottom: 0.6rem;
+}
+
+.steps__container .step {
+    background: var(--main-color);
+    margin: 4rem 0;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.step .step__number {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    background: var(--second-color);
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    margin-bottom: 1.8rem;
+}
+
+/* FIXME: Steps section ends */
+
+/* TODO: Products section starts */
+
+.products {
+    margin: 8rem 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.products .products__paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.products p {
+    text-align: center;
+}
+
+.grid__content img {
+    width: 80%;
+    height: 70%;
+    max-width: 22rem;
+    max-height: 22rem;
+}
+
+.products__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 22rem));
+    justify-content: center;
+    gap: 6rem;
+}
+
+.grid__img__container {
+    width: 80%;
+    height: 70%;
+    max-width: 20rem;
+    max-height: 19rem;
+}
+
+.grid__content:hover img {
+    width: 90%;
+    height: 80%;
+}
+
+
+.products__grid .grid__content h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.grid__content .price {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--second-color);
+}
+
+.grid__content {
+    position: relative;
+    cursor: pointer;
+}
+
+.grid__content .fa-bag-shopping {
+    position: absolute;
+    font-size: 1.8rem;
+    padding: 1rem;
+    bottom: 0;
+    right: 0;
+    background: var(--second-color);
+    color: var(--main-color);
+}
+
+.grid__content .grid__content__decoration__container {
+    position: absolute;
+    left: -4rem;
+    right: 30%;
+    top: 5%;
+    bottom: 50%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__content .grid__content__decoration {
+    width: 52%;
+    height: 84%;
+    background: #bfc8c5;
+    clip-path: circle(50% at 50% 50%);
+}
+
+/* FIXME: Products section ends */
+
+/* TODO: FAQS section starts */
+
+.FAQs {
+    background: #e4f0e9;
+    padding: 1rem;
+}
+
+.FAQs h2 {
+    margin-bottom: 4rem;
+}
+
+.question__content {
+    margin: 4rem 0;
+    background: var(--main-color);
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.question__content .question {
+    font-size: calc(var(--header-sizes) - 1.2rem);
+    font-weight: 500;
+}
+
+.question__content .plus {
+    font-weight: bolder;
+    font-size: calc(var(--header-sizes) - 0.5rem);
+}
+
+.question__content .answer {
+    display: none;
+}
+
+.question__content.active .answer {
+    display: block;
+    margin-top: 1rem;
+    color: var(--main-color);
+}
+
+.question__content.active .question {
+    color: var(--main-color);
+}
+
+.question__content.active {
+    background: var(--second-color);
+}
+
+/* FIXME: FAQs section ends */
+
+/* TODO: Contact section starts */
+
+.contact {
+    padding: 4rem 0;
+}
+
+.contact .contact__information h3 {
+    font-size: calc(var(--header-sizes) - 1.3rem);
+    margin-top: 3rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.number,
+.email {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0.7rem 0;
+}
+
+.number i {
+    margin-right: 0.1rem;
+}
+.email i {
+    margin-right: 0.5rem;
+}
+
+.contact__form {
+    margin-top: 4rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+    font-size: 1.7rem;
+    padding: 1rem;
+    padding-left: 0;
+    padding-right: 1.5rem;
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0.2);
+    resize: none;
+    display: block;
+    width: 100%;
+    margin: 2rem 0; 
+}
+
+.contact__form .button {
+    margin-top: 4rem;
+}
+
+/* FIXME: Contact section ends
+
+/* TODO: Footer starts */
+
+.footer {
+    padding: var(--main-padding);
+    margin-top: 4rem;
+}
+
+.footer__content .footer__update .footer__logo a {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+.footer__update .footer__logo {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.footer__update h2 {
+    font-size: calc(var(--header-sizes) - 0.7rem);
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.footer__update {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__form {
+    background: #e4f0e9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    max-width: 50rem;
+    align-self: center;
+}
+
+.footer__form input {
+    font-size: 1.4rem;
+    background: none;
+    padding: 1rem;
+}
+
+.mobile {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.more__informations ul {
+    list-style-type: none;
+}
+
+.more__informations h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.more__informations .informations {
+    font-size: 1.3rem;
+    margin: 0.6rem 0;
+    cursor: pointer;
+}
+
+.more__informations .informations.numbers {
+    cursor: default;
+}
+
+.more__informations .informations.icons {
+    cursor: default;
+}
+
+.more__informations .informations.icons i {
+    cursor: pointer;
+    margin: 0 0.2rem;
+}
+
+.more__informations .informations.cards {
+    cursor: default;
+}
+
+.more__informations .informations.cards img {
+    width: 4rem;
+    height: 2rem;
+    margin: 0 0.3rem;
+    cursor: pointer;
+}
+
+.copy__container {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+}
+
+.more__informations.cards__container {
+    text-align: center;
+}
+
+/* FIXME: Footer ends */
+
+/* TODO: Media queries start */
+
+@media screen and (min-width: 350px) {
+       
+    /* TODO: Header adjustments */
+
+    .header .header__logo__container a {
+        font-size: 3rem;
+    }
+    
+    .header .fa-bars {
+        font-size: 4.6rem;
+    }
+
+    /* FIXME: Header adjustments end */
+}
+
+@media screen and (min-width: 400px) {
+
+    /* TODO: Setup adjustments */
+
+    :root {
+        --letter-size: 1.4rem;
+        --header-sizes: 3.5rem;
+    }
+       
+    .button {
+        font-size: 1.8rem;
+    }
+
+    /* FIXME: Setup adjustments end */
+
+    /* TODO: Header adjustments */
+
+    .header .header__logo__container a {
+        font-size: 3.2rem;
+    }
+    
+    .header .fa-bars {
+        font-size: 4.8rem;
+    }
+
+    /* FIXME: Header adjustments end */
+
+    /* TODO: FAQs adjustments */
+
+    .FAQs {
+        padding: 2rem;
+    }
+
+    .question__content .question {
+        font-size: calc(var(--header-sizes) - 1.4rem);
+    }
+    
+    .question__content .plus {
+        font-size: calc(var(--header-sizes) - 0.5rem);
+    }
+
+    /* FIXME: FAQs adjustments end */
+    
+    /* TODO: Footer adjustments */
+
+    .footer__form {
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    /* FIXME: Footer adjustments end */
+
+}
+
+@media screen and (min-width: 450px) {
+    
+    /* TODO: Steps adjusments */
+    .steps {
+        padding: 4rem 4rem 2rem 4rem;
+    } 
+
+    /* FIXME: Steps adjustments end */
+    
+}
+
+@media screen and (min-width:500px) {
+
+    /* TODO: Setting up adjustments */
+    
+    :root {
+        --main-padding: 2rem 3rem;
+    }
+
+    /* FIXME: Setting up adjustments end */
+
+    /* TODO: Header adjustments */
+
+    .header .header__logo__container a {
+        font-size: 3.2rem;
+    }
+    
+    .header .fa-bars {
+        font-size: 6rem;
+    }
+    
+    :root {
+        --header-height: 10rem;
+    }
+
+    /* FIXME: Header adjustments end */
+    
+    /* TODO: FAQs adjustments */
+
+    .FAQs {
+        padding: 3rem;
+    }
+
+    /* FIXME: FAQs adjustments end */
+
+}
+
+@media screen and (min-width:600px) {
+    
+    /* TODO: Setting up adjustments */
+    
+    :root {
+        --main-padding: 2rem 4rem;
+        --header-sizes: 4rem;
+    }
+
+    .button {
+        font-size: 2rem;
+    }
+
+    /* FIXME: Setting up adjustments end */
+    
+    /* TODO: About section adjustments */
+
+    .right__container .right__content {
+        font-size: 1.4rem;
+    }
+
+    /* FIXME: About section adjustments end */
+    
+
+    /* TODO: Steps section Adjustments */
+
+    .steps .step h3 {
+        font-size: calc(var(--header-sizes) - 1.6rem);
+        margin-bottom: 1rem;
+    }
+
+    /* FIXME: Steps section adjustments end */
+    
+    /* TODO: Products adjustments */
+
+    .products__grid {
+        gap: 8rem;
+    }
+
+    /* FIXME: Producst adjustments end */
+
+    /* TODO: FAQs adjustments */
+
+    .question__content .question {
+        font-size: calc(var(--header-sizes) - 1.8rem);
+    }
+
+    /* FIXME: FAQs adjustments end */
+    
+    /* TODO: Contact adjustments */
+    
+    .contact .contact__information h3 {
+        font-size: calc(var(--header-sizes) - 2rem);
+    }
+
+    .contact__form input,
+    .contact__form textarea {
+        font-size: 2rem;
+    }
+
+    /* FIXME: Contact adjustments end */
+    
+    /* TODO: Footer adjustments */
+
+    .footer__form input {
+        font-size: 1.6rem;
+    }
+
+    .copy__container {
+        font-size: 1.3rem;
+    }
+
+    /* FIXME: Footer adjustments end */
+
+
+}
+
+@media screen and (min-width:700px) {
+
+    /* TODO: Steps adjusments */
+
+    .steps {
+        padding: 6rem 6rem 2rem 6rem;
+    } 
+
+    /* FIXME: Steps adjustments end */
+
+    /* TODO: FAQs adjustments */
+
+    .FAQs {
+        padding: 4rem;
+    }
+
+    /* FIXME: FAQs adjustments end */
+
+}
+
+@media screen and (min-width:800px) {
+
+    /* TODO: Steps adjustments */
+  
+    .steps__container {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .steps {
+        padding: 2rem ;
+    } 
+    
+}
+
+@media screen and (min-width: 870px) {
+    
+    /* TODO: Home section adjustments */
+    .home {
+        display: flex;
+        flex-direction: row;
+        padding-top: 4rem;
+        justify-content: space-evenly;
+    }
+    
+    /* FIXME: Home section adjustments end */
+    
+    /* TODO: About section adjustments */
+
+    .about {
+        margin-top: 8rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 4rem;       
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+      
+    /* TODO: Header adjustments */
+
+    .header .fa-bars {
+        display: none;
+    }
+
+    .header__nav__bar__container .fa-times {
+        display: none;
+    }
+
+    .header__nav__bar__container {
+        position: initial;
+        height: initial;
+        background: none;
+        display: block;
+        z-index: 900;
+        backdrop-filter: none;
+    }
+
+    .header__nav__bar__container .header__nav__bar {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header__nav__bar__container .header__nav__bar a {
+        font-size: 2.8rem;
+    }
+
+    .header__nav__bar__container .header__nav__bar a:hover {
+        color: var(--second-color);
+    }
+
+    .header__nav__bar .header__nav__bar__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__item__decoration {
+        display: block;
+        width: 0;
+        height: 0.2rem;
+    }
+
+    .header__nav__bar__container .header__nav__bar .header__nav__bar__item:hover .header__item__decoration {
+        background: var(--second-color);
+        width: 80%;
+    }
+
+    /* FIXME: Header adjustments end */
+
+    /* TODO: FAQs adjustments */
+
+    .questions__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 4rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .question__content .question {
+        width: 30rem;
+    }
+
+    .question__content {
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .question__content.active {
+        height: 17rem;
+        width: 30rem;
+    }
+
+    /* FIXME: FAQs adjustments end */
+    
+    /* TODO: Contact adjustments */
+
+    .contact {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        
+    }
+
+    .contact__information {
+        flex: 1 1;
+    }
+
+    .contact__form {
+        flex: 1 1;
+    }
+
+    /* FIXME: Contact adjustments end */
+
+}
+
+@media screen and (min-width:958px) {
+
+    /* TODO: Footer adjustments */
+
+      .footer__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;   
+    }
+
+    .footer__form {
+        align-self: initial;
+        max-width: 38rem;
+    }
+
+    .footer__update .footer__logo {
+        text-align: initial;
+    }
+
+    .footer__update h2 {
+        font-size: calc(var(--header-sizes) - 1.2rem);
+        text-align: initial;
+    }
+    
+}
+
+@media screen and (min-width:1000px) {
+
+    :root {
+        --main-padding: 2rem 7%;
+    }
+
+    /* TODO: Header adjustments */
+    
+    .header__nav__bar__container {
+        padding-right: 2rem;
+    }
+
+    .header__nav__bar__container .header__nav__bar {
+        gap: 2.5rem;
+    }
+
+    /* FIXME: Header adjustments end */
+    
+    /* TODO: Steps adjustments */
+
+    .steps__container .step {
+        padding: 4rem 2rem;
+    }
+
+    /* FIXME: Steps adjustments */
+
+    /* TODO: FAQs adjustments */
+
+    .FAQs {
+        padding: 6rem;
+        padding-bottom: 4rem;
+    }
+
+    /* FIXME: FAQs adjustments end */
+}
+
+@media screen and (min-width: 1100px) {
+    
+    /* TODO: Products adjustments */
+
+    .products__grid {
+        gap: 10rem;
+    }
+
+    /* FIXME: Products adjustments end */
+    
+    /* TODO: FAQs adjustments */
+
+    .FAQs {
+        padding: 8rem;
+        padding-bottom: 4rem;
+    }
+
+    .question__content .question {
+        width: 32rem;
+    }
+
+    .question__content.active {
+        width: 33rem;
+    }
+
+    /* FIXME: FAQS adjustments end */
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+    /* TODO: Steps adjustments */
+    .steps {
+        padding: 5rem 5rem 2rem 5rem;
+    }
+
+    .steps__container {
+        gap: 4rem;
+    }
+
+    /* FIXME: Steps adjustments end */
+
+    /* TODO: FAQs adjustments */
+
+    .FAQs {
+        padding: 12%;
+        padding-bottom: 4rem;
+        padding-top: 12rem;
+    }
+
+    /* FIXME: FAQS adjustments end */
+    
+}
+
+/* FIXME: Media queries end */

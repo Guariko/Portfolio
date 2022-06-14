@@ -16,6 +16,8 @@ const headerNavBarContainer = document.querySelector(".header__nav__bar__contain
 const closeHeaderNavBar = document.querySelector(".header__nav__bar__container .fa-times");
 const showHeaderNavBar = document.querySelector(".header .fa-bars");
 const classToShowElement = "active";
+const headerNavBarItems = document.querySelectorAll(".header__nav__bar__item a");
+
 
 showHeaderNavBar.addEventListener("click", e => {
     show(headerNavBarContainer, classToShowElement);
@@ -23,6 +25,12 @@ showHeaderNavBar.addEventListener("click", e => {
 
 closeHeaderNavBar.addEventListener("click", e => {
     hide(headerNavBarContainer, classToShowElement);
+});
+
+headerNavBarItems.forEach(item => {
+    item.addEventListener("click", e => {
+        hide(headerNavBarContainer, classToShowElement);
+    });
 });
 
 // FIXME: Header ends //

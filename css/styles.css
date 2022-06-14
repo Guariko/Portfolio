@@ -232,20 +232,22 @@ mark {
 /* TODO: About me section starts */
 
 .about {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
 }
 
 .about__image {
     display: none;
 }
 
+.contact h2,
 .projects h2,
 .experience__content h2,
 .about h2 {
     font-size: 2rem;
 }
 
+.contact h2 mark,
 .projects h2 mark
 .experience__content mark,
 .about h2 mark {
@@ -308,8 +310,8 @@ mark {
 /* TODO: Experience starts */
 
 .experience {
-    padding-top: 25rem;
-    padding-bottom: 25rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 
 .experience p:first-of-type {
@@ -428,6 +430,31 @@ mark {
 
 /* FIXME: Projects end */
 
+/* TODO: Contact starts */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem 0 8rem;
+}
+
+.contact h3 {
+    color: #cad5f5;
+    font-size: 4rem;
+}
+
+.contact h2 {
+    color: var(--second-color);
+}
+
+.contact .button {
+    padding: 1rem 1.5rem;
+}
+
+
 /* TODO: Animations */
 
 @keyframes color-effect {
@@ -544,7 +571,7 @@ mark {
     
     /* FIXME: Main adjustments end */
 
-    /* Project adjustments */
+    /* TODO: Project adjustments */
 
     .project__images.desktop {
         width: 40rem;
@@ -555,7 +582,15 @@ mark {
         height: 35rem;
     }
 
-    /* Project adjustments end */
+    /* FIXME: Project adjustments end */
+
+    /* TODO: Contact adjustments */
+
+    .contact h3 {
+        font-size: 5rem;
+    }
+
+    /* FIXME: Contact adjustments end */
     
 }
 
@@ -722,6 +757,19 @@ mark {
     }
 
     /* FIXME: Home adjustments end */
+
+    
+    /* TODO: Contact adjustments */
+    
+    .contact {
+        padding-top: 8rem;
+    }
+
+    .contact h3 {
+        font-size: 7rem;
+    }
+
+    /* FIXME: Contact adjustments end */
     
 }
 
@@ -813,7 +861,7 @@ mark {
     .projects {
         display: flex;
         flex-direction: column;
-        gap: 15rem;
+        gap: 10rem;
     }
 
     .project {
