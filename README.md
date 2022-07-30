@@ -1,4 +1,4 @@
 # Portfolio
 My portfolio
 
-My portfolio almost completed
+This is a portfolio that I've coded just for fun. Later on I'll will code an actual portfolio.
